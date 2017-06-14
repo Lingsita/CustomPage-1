@@ -1,6 +1,9 @@
-var app = angular.module('customPage');
-app.controller('aboutController',function(){
-  var vm = this;
-  vm.selected = 0;
+(function () {
 
-});
+    angular.module('customPage')
+        .controller('aboutController',function(){
+            var vm = this;
+            vm.selected = 0;
+
+        });
+})();

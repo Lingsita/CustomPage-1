@@ -1,0 +1,10 @@
+{
+  "phone" : "+57 423995",
+  "free_phone" : "+57 018000517711",
+  "address" : "Bogotá, Colombia",
+  "email" : "contact@juanvaldezcafe.com",
+  "social":{
+    "facebook": "https://www.facebook.com/JuanValdezCafe/",
+    "twitter": "https://twitter.com/JuanValdezCafe"
+  }
+}

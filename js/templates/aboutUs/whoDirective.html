@@ -1,0 +1,22 @@
+<div class="content who" ng-show="about.selected === 0">
+    <div ng-repeat="description in descriptions">
+        <div ng-class="description.class == 'odd' ? 'odd' : 'normal'" class="post text-container">
+            <h2 class="mt40 pt40 text-center">{{description.title}}</h2>
+            <div class="row center-margin">
+                <div ng-if="description.class == 'normal'" class="display-inline text-center">
+                    <img ng-src="{{description.img}}"/>
+                </div>
+                <div class="display-inline text-center pl30 pr30  content-text">
+                    <div class="row center-margin">
+                        <div class="">
+                            <p>{{description.text}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div ng-if="description.class == 'odd'" class="display-inline text-center">
+                    <img ng-src="{{description.img}}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="content who" ng-show="about.selected === 3">
+    <div class="post odd text-container">
+        <h2 class="mt40 pt40 text-center">Direct Contact</h2>
+        <div class="text-center contact-container mt40 pt40 pb40">
+            <div class="information">
+                <h2 class="mb20">Bogotá</h2>
+                <div class="mb20">
+                    <p class="mb10">{{contactInfo.phone}}</p>
+                    <p>Free line in Colombia: {{contactInfo.free_phone}}</p>
+                </div>
+                <h2 class="mb20">Email</h2>
+                <div class="mb20">
+                    <a href="mailto:hello@test.net">{{ contactInfo.email}}</a>
+                </div>
+                <h2 class="mb20">Adress</h2>
+                <div>
+                    <p>{{ contactInfo.address}}</p>
+                </div>
+                <a href="{{ contactInfo.social.facebook }}"><i class="fa fa-facebook-square"></i>Facebook</a>
+                <a href="{{ contactInfo.social.facebook }}"><i class="fa fa-twitter-square"></i>Twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+

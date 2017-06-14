@@ -1,0 +1,24 @@
+<div class="content speciality" ng-show="about.selected === 1">
+    <div ng-repeat="speciality in specializations">
+        <div>
+            <div ng-class="speciality.class == 'odd' ? 'odd' : 'normal'" class="text-container">
+                <h2 class="mt40 pt40 text-center">{{speciality.title}}</h2>
+                <div class="row center-margin">
+                    <div ng-if="speciality.class == 'normal'" class="display-inline text-center">
+                        <img ng-src="{{speciality.img}}"/>
+                    </div>
+                    <div class="display-inline text-center pl30 pr30  content-text">
+                        <div class="row center-margin">
+                            <div class="">
+                                <p>{{speciality.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="speciality.class == 'odd'" class="display-inline text-center">
+                        <img ng-src="{{speciality.img}}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
